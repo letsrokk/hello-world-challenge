@@ -3,7 +3,6 @@ name: Build & Release JAR
 on:
   push:
     branches:
-      - master
       - release/*
 
 jobs:
