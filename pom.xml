@@ -80,7 +80,6 @@
         <artifactId>quarkus-maven-plugin</artifactId>
         <version>${quarkus.version}</version>
         <configuration>
-          <uberJar>true</uberJar>
           <finalName>${uber-jar-name}</finalName>
         </configuration>
         <executions>
