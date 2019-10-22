@@ -20,7 +20,7 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       id: build_maven
-      run: ./mvnw -B package --file pom.xml
+      run: ./mvnw -B package --file pom.xml -Dgithub-release
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1.0.0
