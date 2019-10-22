@@ -6,7 +6,7 @@
   <artifactId>hello-world-challenge</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <properties>
-    <jar.finalName>${project.name}</jar.finalName>
+    <uber-jar-name>${project.name}</uber-jar-name>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <surefire-plugin.version>2.22.2</surefire-plugin.version>
     <quarkus.version>0.23.2</quarkus.version>
@@ -79,6 +79,10 @@
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-maven-plugin</artifactId>
         <version>${quarkus.version}</version>
+        <configuration>
+          <uberJar>true</uberJar>
+          <finalName>${uber-jar-name}</finalName>
+        </configuration>
         <executions>
           <execution>
             <goals>
