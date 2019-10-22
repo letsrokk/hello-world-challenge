@@ -13,13 +13,17 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+      id: checkout
     - name: Set up JDK 1.8
+      id: setup
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
     - name: Build with Maven
+      id: build_maven
       run: ./mvnw -B package --file pom.xml
     - name: Create Release
+      id: create_release
       uses: actions/create-release@v1.0.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -28,7 +32,8 @@ jobs:
         release_name: Release ${{ github.ref }}
         draft: false
         prerelease: false
-    - name: Upload Release
+    - name: Upload Artifact
+      id: upload_artifact
       uses: actions/upload-release-asset@v1.0.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
