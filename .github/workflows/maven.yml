@@ -1,4 +1,4 @@
-name: Java CI
+name: Build & Release JAR
 
 on:
   push:
@@ -18,3 +18,21 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       run: ./mvnw -B package --file pom.xml
+    - name: Create Release
+      uses: actions/create-release@v1.0.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        draft: false
+        prerelease: false
+    - name: Upload Release
+      uses: actions/upload-release-asset@v1.0.1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./target/hello-world-challenge-*.jar
+        asset_name: hello-world-challenge.jar
+        asset_content_type: application/java-archive
