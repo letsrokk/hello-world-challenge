@@ -110,8 +110,6 @@
         <artifactId>maven-release-plugin</artifactId>
         <version>${release-plugin.version}</version>
         <configuration>
-<!--          <useReleaseProfile>false</useReleaseProfile>-->
-<!--          <releaseProfiles>release</releaseProfiles>-->
           <goals>install</goals>
           <autoVersionSubmodules>true</autoVersionSubmodules>
           <tagNameFormat>v@{project.version}</tagNameFormat>
@@ -138,6 +136,7 @@
             <artifactId>quarkus-maven-plugin</artifactId>
             <version>${quarkus.version}</version>
             <configuration>
+              <uberJar>true</uberJar>
               <finalName>${runner-jar-name}</finalName>
             </configuration>
           </plugin>
