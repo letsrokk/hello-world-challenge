@@ -114,7 +114,7 @@
 <!--          <releaseProfiles>release</releaseProfiles>-->
           <goals>install</goals>
           <autoVersionSubmodules>true</autoVersionSubmodules>
-          <tagNameFormat>@{project.version}</tagNameFormat>
+          <tagNameFormat>v@{project.version}</tagNameFormat>
         </configuration>
       </plugin>
     </plugins>
