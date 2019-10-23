@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.libertex.qa</groupId>
   <artifactId>hello-world-challenge</artifactId>
-  <version>1.0.6</version>
+  <version>1.0.7-SNAPSHOT</version>
 
   <properties>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -23,7 +23,7 @@
     <connection>scm:git:https://github.com/letsrokk/hello-world-challenge.git</connection>
     <developerConnection>scm:git:git@github.com:letsrokk/hello-world-challenge.git</developerConnection>
     <url>https://github.com/letsrokk/hello-world-challenge</url>
-    <tag>v1.0.6</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <dependencyManagement>
