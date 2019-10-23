@@ -27,6 +27,8 @@ Test Automation Engineer position
 ```
 By default, application runs on port `8080`
 
+Latest version of JAR-file can be found in [Releases](https://github.com/letsrokk/hello-world-challenge/releases/latest) on GitHub
+
 ## Documentation
 
 Swagger UI is available on 
