@@ -70,7 +70,7 @@ public class ClientLifecycleTest {
                         .username(this.client.getUsername())
                         .build();
 
-        sessionId = given()
+        this.sessionId = given()
                 .when()
                 .contentType(ContentType.JSON)
                 .body(requestBody)
@@ -88,7 +88,7 @@ public class ClientLifecycleTest {
     public void helloTest() {
         HelloResponse receivedResponseBody = given()
                 .when()
-                .header("X-Session-Id", sessionId)
+                .header("X-Session-Id", this.sessionId)
                 .get("/challenge/hello")
                 .then()
                 .statusCode(200)
