@@ -112,6 +112,7 @@
         <configuration>
 <!--          <useReleaseProfile>false</useReleaseProfile>-->
 <!--          <releaseProfiles>release</releaseProfiles>-->
+          <goals>install</goals>
           <autoVersionSubmodules>true</autoVersionSubmodules>
           <tagNameFormat>@{project.version}</tagNameFormat>
         </configuration>
