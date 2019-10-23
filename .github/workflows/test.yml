@@ -2,6 +2,9 @@ name: Build & Test
 
 on:
   push:
+    paths-ignore:
+      - readme/**
+      - README.md
     branches:
       - master
       - branches/*

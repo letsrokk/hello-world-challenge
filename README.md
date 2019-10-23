@@ -1,5 +1,9 @@
 # hello-world-challenge
 
+Simple Java application built with [Quarkus](https://quarkus.io) framework.   
+Used as a sample application for "challenge" (test) task for candidates on 
+Test Automation Engineer position 
+
 ## Story
 
 > **As a** user  
