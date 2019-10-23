@@ -119,10 +119,10 @@
 
   <profiles>
     <profile>
-      <id>github-release</id>
+      <id>github-jar-release</id>
       <activation>
         <property>
-          <name>github-release</name>
+          <name>github-jar-release</name>
         </property>
       </activation>
       <properties>
