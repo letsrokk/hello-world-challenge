@@ -8,7 +8,9 @@
 
 ## Run with Docker
 
-TBD
+```
+% docker run -p 8080:8080 -d letsrokk/hello-world-challenge:latest
+```
 
 ## Run with Java
 
