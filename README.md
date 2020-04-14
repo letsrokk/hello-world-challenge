@@ -9,7 +9,7 @@ Test Automation Engineer position
 > **I want to** send Hello request  
 > **So that** I am greeted by the app in response
 
-We need to create test automation project and cover this story with set of automated tests (minimum of 1 positive 
+We need to create test automation project and cover story above with a set of automated tests (minimum of 1 positive 
 and 1 negative scenario, but the more the merrier).
 
 ## Run with Docker
