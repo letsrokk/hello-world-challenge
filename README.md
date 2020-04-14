@@ -9,16 +9,16 @@ Test Automation Engineer position
 > **I want to** send Hello request  
 > **So that** I am greeted by the app in response
 
-We need to create test automation project and cover the story above with a set of automated tests (minimum of 1 positive 
-and 1 negative scenario, but the more the merrier).
+For challenge task, it is required to create a test automation project and cover the story above 
+with a set of automated tests (minimum of 1 positive and 1 negative scenario, but the more the merrier).
 
-## Run with Docker
+## Run App with Docker
 
 ```
 % docker run -p 8080:8080 -d letsrokk/hello-world-challenge:latest
 ```
 
-## Run with Java
+## Run App with Java
 
 ```
 % java -jar hello-world-challenge-runner.jar 
@@ -32,7 +32,7 @@ By default, application runs on port `8080`
 
 Latest version of JAR-file can be found in [Releases](https://github.com/letsrokk/hello-world-challenge/releases/latest) on GitHub
 
-## Documentation
+## App Documentation
 
 Swagger UI is available on 
 ```
