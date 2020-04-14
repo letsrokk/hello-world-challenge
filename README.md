@@ -9,7 +9,7 @@ Test Automation Engineer position
 > **I want to** send Hello request  
 > **So that** I am greeted by the app in response
 
-For challenge task, it is required to create a test automation project and cover the story above 
+For the challenge task, it is required to create a test automation project and cover the story above 
 with a set of automated tests (minimum of 1 positive and 1 negative scenario, but the more the merrier).
 
 ## Run App with Docker
