@@ -3,11 +3,14 @@
 Simple Java application built with [Quarkus](https://quarkus.io) framework. Used as a sample application for "challenge" (test) task for candidates on 
 Test Automation Engineer position 
 
-## Story
+## Story and Challenge Task
 
 > **As a** user  
 > **I want to** send Hello request  
 > **So that** I am greeted by the app in response
+
+We need to create test automation project and cover this story with set of automated tests (minimum of 1 positive 
+and 1 negative scenario, but the more the merrier).
 
 ## Run with Docker
 
